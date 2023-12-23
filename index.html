@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="Movies.css" />
+    <title>MAHER Moves</title>
+  </head>
+  <body>
+    <!--start Nav-bar -->
+    <div class="navbar">
+      <img
+      class="navimg"
+      src="blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg"
+      alt="Icone"
+      />
+      <a href="index.html">Home</a>
+      <a href="#" onclick="toggleSignUp()">Signup</a>
+      <div class="dropdown">
+        <button class="dropbtn">Language</button>
+        <div class="dropdown-content">
+          <div id="google_translate_element"></div>
+        </div>
+      </div>
+      <input class="search" type="text" placeholder="Search..." />
+    </div>
+
+    <h1>\/</h1>
+    <form class="form-inline" method="post" id="signup" action="index.php" >
+      <label class="label1" for="name ">Name:</label>
+      <input type="text" name="name" id="name" placeholder="Enter name" />
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        placeholder="Enter email"
+        name="email"
+        required
+      />
+
+      <label for="pswd">Password:</label>
+      <input
+        type="password"
+        id="pwd"
+        placeholder="Enter password"
+        name="pswd"
+      />
+
+      <label> <input type="checkbox" name="remember" /> Remember me </label>
+      <button name="submit" type="submit">Submit</button>
+    </form>
+    <!-- end Nav-bar -->
+    <!-- quots -->
+    <div class="head">
+      <h1 id="title">ENJOY YOUR MOVIE</h1>
+      <h4 id="para">>>MOST POPULAR MOVIES<<</h4>
+    </div>
+    <div>
+      <h2 class="show">HOVER TO GET QUOTE OF YOUR DAY</h2>
+      <p class="hide">NO REASONE TO DIE YET MAYBE :)</p>
+    </div>
+    <!-- quots -->
+    <!-- strat card -->
+
+    <!-- main page -->
+    <div class="main">
+      <div class="movie">
+        <img class="imghover" src="me.jpeg" alt="image" />
+      <div class="movie-info">
+        <h4><a href="">Movie Title</a></h4>
+        <span calss="date">2023</span>
+        <span class="rate">9.8</span>
+      </div>
+      <div class="Overveiw">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+        harum quisquam voluptas velit, necessitatibus similique temporibus nam
+        nulla fuga blanditiis veniam architecto sint facilis voluptatibus,
+        explicabo quis error optio doloremque.
+      </div>
+    </div>
+    </div>
+    <!-- end of the card -->
+    <!-- pagination -->
+    <div class="pagination">
+      <button class="previous" disabled>Previous</button>
+      <button class="next">Next</button>
+    </div>
+    <script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+      }
+      </script>
+      
+      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!-- pagination -->
+    <script src="Moves.js"></script>
+  </body>
+</html>
