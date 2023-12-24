@@ -134,9 +134,9 @@ home.addEventListener("click",(e)=> {
 location.reload()
 });
 
-function toggleSignUp(e){
+function toggleSignin(e){
   // e.preventDefault();
-let x =  document.getElementById("signup");
+let x =  document.getElementById("signin");
 
 if(x.style.display === 'none'){
   x.style.display = 'block';
