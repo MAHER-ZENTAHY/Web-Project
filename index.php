@@ -1,7 +1,6 @@
 <?php
 
 $name =$_REQUEST['name'];
-$email = $_REQUEST['email'];
 $pass = $_REQUEST['pswd'];
 
 if(isset($_POST['submit'])){
@@ -19,7 +18,7 @@ if(!$conn){
 
 mysqli_select_db($conn, $db);
 
-$insert = "INSERT INTO movies VALUES('$name', '$email', '$pass')";
+$insert = "INSERT INTO movies VALUES('$name', '$pass')";
 
 $result = mysqli_query($conn, $insert);
 
