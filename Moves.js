@@ -42,7 +42,7 @@ const loadMovies =(page, language = "en-us")=>{getTMDB('/3/movie/popular', {page
   <div class="movie-info">
 <h5><a href="">${title}</a></h5>
 <span calss="rate">${(release_date).split("-")[0]}</span>
-<span class="${colorchange(vote_average)}">${vote_average}</span>
+<span class="${colorchange(vote_average).tofixed(1)}">${vote_average}</span>
 </div>
 <div class="Overveiw">
          ${overview}
@@ -96,7 +96,7 @@ const movieEl = document.createElement('div');
   <div class="movie-info">
 <h5><a href="">${title}</a></h5>
 <span calss="rate">${(release_date).split("-")[0]}</span>
-<span class="${colorchange(vote_average)}">${vote_average}</span>
+<span class="${colorchange(vote_average).tofixed(1)}">${vote_average}</span>
 </div>
 <div class="Overveiw">
         ${overview}
